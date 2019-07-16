@@ -62,7 +62,7 @@ Resources:
           cd /var/www/html
           sudo aws s3 cp s3://udacity-project-01-udagram/udagram.zip . 
           #aws s3 cp s3://udacity-project-01-udagram/index.html .
-          sudo unzip -o udagram.zip .
+          sudo unzip -o udagram.zip 
           #wget -P ../../var/www/html http://udacity-project-01-udagram.s3-us-west-2.amazonaws.com/index.html
           #wget -P http://udacity-project-01-udagram.s3-us-west-2.amazonaws.com/index.html 
           #aws s3 sync s3://udacity-project-01-udagram
@@ -70,7 +70,7 @@ Resources:
       ImageId: ami-026c8acd92718196b 
       IamInstanceProfile: !Ref RootInstanceProfile
       #IamInstanceProfile: arn:aws:iam::724427472536:instance-profile/UdacityProject01Server-A-RootInstanceProfile-1DRK81W0S3T8A
-      KeyName: Udacity-Project-02
+      #KeyName: **DISABLED - Used only for testing purposes **
       SecurityGroups:
       - Ref: WebServerSecurityGroup
       InstanceType: t2.medium
